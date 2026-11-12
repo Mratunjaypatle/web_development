@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form - Student Notes</title>
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- FORM ELEMENT                                -->
+    <!-- action   = where form data is sent         -->
+    <!-- method   = "GET" (in URL) or "POST" (body) -->
+    <!-- ============================================ -->
+    <form action="/submit" method="post">
+
+        <!-- ======================================== -->
+        <!-- 1. TEXT INPUT                            -->
+        <!-- type="text" = single line text          -->
+        <!-- placeholder = hint text inside field    -->
+        <!-- required  = field cannot be empty       -->
+        <!-- ======================================== -->
+        <h3>1. Text Input</h3>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 2. PASSWORD                              -->
+        <!-- Characters are hidden (shown as dots)   -->
+        <!-- ======================================== -->
+        <h3>2. Password</h3>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 3. NUMBER                                -->
+        <!-- Only numeric values allowed             -->
+        <!-- min / max / step control the range      -->
+        <!-- ======================================== -->
+        <h3>3. Number</h3>
+        <label for="age">Age (18-60):</label>
+        <input type="number" id="age" name="age" min="18" max="60" step="1">
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 4. EMAIL                                 -->
+        <!-- Browser validates email format          -->
+        <!-- ======================================== -->
+        <h3>4. Email</h3>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 5. TEL (Phone)                           -->
+        <!-- For phone numbers                       -->
+        <!-- ======================================== -->
+        <h3>5. Phone</h3>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 6. URL                                   -->
+        <!-- Validates URL format                    -->
+        <!-- ======================================== -->
+        <h3>6. URL</h3>
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com">
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 7. DATE                                  -->
+        <!-- Opens a date picker                     -->
+        <!-- ======================================== -->
+        <h3>7. Date</h3>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 8. TIME                                  -->
+        <!-- Opens a time picker                     -->
+        <!-- ======================================== -->
+        <h3>8. Time</h3>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 9. DATETIME-LOCAL                        -->
+        <!-- Date + Time together                    -->
+        <!-- ======================================== -->
+        <h3>9. Date & Time</h3>
+        <label for="datetime">Meeting Date & Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime">
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 10. MONTH                                -->
+        <!-- ======================================== -->
+        <h3>10. Month</h3>
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month">
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 11. WEEK                                 -->
+        <!-- ======================================== -->
+        <h3>11. Week</h3>
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week">
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 12. COLOR                                -->
+        <!-- Opens a color picker                    -->
+        <!-- ======================================== -->
+        <h3>12. Color</h3>
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" value="#ff0000">
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 13. RANGE (Slider)                       -->
+        <!-- min, max, step define the slider        -->
+        <!-- ======================================== -->
+        <h3>13. Range (Slider)</h3>
+        <label for="volume">Volume (0-100):</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 14. RADIO BUTTON                         -->
+        <!-- Same name = only ONE can be selected    -->
+        <!-- ======================================== -->
+        <h3>14. Radio Buttons (select one)</h3>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 15. CHECKBOX                             -->
+        <!-- Multiple can be selected                -->
+        <!-- ======================================== -->
+        <h3>15. Checkboxes (select multiple)</h3>
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js" name="skills" value="js">
+        <label for="js">JavaScript</label>
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 16. FILE UPLOAD                          -->
+        <!-- Opens file browser                      -->
+        <!-- ======================================== -->
+        <h3>16. File Upload</h3>
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 17. SEARCH                               -->
+        <!-- ======================================== -->
+        <h3>17. Search</h3>
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search...">
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 18. HIDDEN                               -->
+        <!-- Not visible to user, sends data silently -->
+        <!-- ======================================== -->
+        <input type="hidden" id="token" name="token" value="abc123">
+
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 19. TEXTAREA (Multi-line text)           -->
+        <!-- rows = number of visible lines          -->
+        <!-- ======================================== -->
+        <h3>19. Textarea (Multi-line)</h3>
+        <label for="message">Message:</label>
+        <br>
+        <textarea id="message" name="message" rows="4" cols="40" placeholder="Write your message..."></textarea>
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 20. SELECT / DROPDOWN                    -->
+        <!-- <option> goes inside <select>           -->
+        <!-- ======================================== -->
+        <h3>20. Dropdown (Select)</h3>
+        <label for="course">Choose a course:</label>
+        <select id="course" name="course">
+            <option value="">-- Select --</option>
+            <option value="bca">BCA</option>
+            <option value="btech">B.Tech</option>
+            <option value="mca">MCA</option>
+        </select>
+        <br><br>
+
+        <!-- ======================================== -->
+        <!-- 21. BUTTONS                              -->
+        <!-- type="submit"  = sends the form         -->
+        <!-- type="reset"   = clears all fields      -->
+        <!-- type="button"  = no default action      -->
+        <!-- ======================================== -->
+        <h3>21. Buttons</h3>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Click Me</button>
+
+    </form>
+
+</body>
+</html>   
