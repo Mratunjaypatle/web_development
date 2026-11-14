@@ -1,0 +1,41 @@
+body {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgb(9, 142, 118);
+}
+
+#main {
+    background-color: cornsilk;
+    height: 500px;
+    border: 1px dashed teal;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#thanos {
+    background-color:  indianred;
+    height: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.spiderman {
+    color: antiquewhite;
+    background-color: slateblue;
+    height: 300px;
+    border: solid 5px black;
+    border-radius: 20px;
+    /* The CSS border-radius property rounds the corners of an element's outer border edge */
+}
+
+.maphisto {
+    background-color: pink;
+    color: black;
+    border: 2px solid blue;
+    font-size: 20px;
+    font-weight: bold;
+}
