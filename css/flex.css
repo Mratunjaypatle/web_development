@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(102, 102, 168);
+}
+
+.container {
+    border: 5px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-between;
+    /* flex-wrap:s wrap; */
+    align-items: center;
+
+}
+
+.item {
+    height: 12px;
+    width: 30px;
+    border: 2px solid black;
+    margin: 4px;
+    background-color: blueviolet;
+}
